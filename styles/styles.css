@@ -112,6 +112,7 @@ body{
     body{
         margin: 40% auto 40% auto;
         height: auto;
+        min-height: 120vh;
     }
     .principal__card{
         flex-direction: column;
