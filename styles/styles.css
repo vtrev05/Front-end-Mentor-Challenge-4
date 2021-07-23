@@ -1,0 +1,187 @@
+body{
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(hsl(273, 75%, 66%),
+    hsl(240, 73%, 65%));
+}
+.principal__card{
+    display: flex;
+    position: relative;
+    top: 18vh;
+    background-color: hsl(240, 5%, 91%);
+    max-width: 1000px;
+    height: 100%;
+    max-height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+/* LEFT PART OF CARD*/
+
+.left__part--card{
+    position: relative;
+    left: 0%;
+    max-width: 50%;
+    overflow: hidden;
+}
+.bg__pattern--desktop{
+    position: absolute;
+    top: -55%;
+    right: 15%;
+}
+.box {
+    position: absolute;
+    left: -92px;
+    top: 36%;
+    z-index: 30;
+}
+.woman__desktop{
+    position: relative;
+    left: -80px;
+    top: 12%;
+    z-index: 20;
+}
+
+/* RIGHT PART OF CARD*/
+
+.right__part--card {
+    position: relative;
+    right: 0%;
+    width: 40%;
+    height: 80%;
+    text-align: left;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.principal-title{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.information{
+    padding: 4px;
+    border-bottom: 2px solid rgb(0 0 0 / .1);
+}
+.title {
+    display: inline-block;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.title:hover {
+    color: hsl(14, 88%, 65%);
+}
+
+.arrow, .arrow-3,.arrow-4,.arrow-5,.invert-arrow,.bold__text, .title{
+    cursor: pointer;
+}
+
+.arrow {
+    padding-left: 80px;
+}
+.arrow-3 {
+    padding-left: 150px;
+}
+.arrow-4 {
+    padding-left: 148px;
+}
+.arrow-5 {
+    padding-left: 105px;
+}
+
+.subtitle,.title {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: 400;
+    color: hsl(237, 12%, 33%);
+}
+.bold__text {
+    display: inline-block;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+}
+
+.invert-arrow{
+    transform: rotate(180deg);
+    padding-right: 80px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 950px) {
+    body{
+        margin: 40% auto 40% auto;
+        height: auto;
+    }
+    .principal__card{
+        flex-direction: column;
+        align-items: center;
+        top: auto;
+        max-width: 90%;
+        padding-bottom: 13%;
+        border-radius: 20px;
+        box-shadow: 0px 10px 10px -2px hsl(238, 29%, 16%);
+    }
+
+    /* LEFT PART OF CARD*/
+
+    .left__part--card{
+        position: relative;
+        max-height: 50px;
+        max-width: 70%;
+        overflow: visible;
+        padding-bottom: 75px;
+    }
+    .bg__pattern--desktop{
+        position: absolute;
+        transform: scale(0.25);
+        top: -490px;
+        right: -155%;
+        opacity: 0.8;
+    }
+    .box {
+        display: none;
+    }
+    .woman__desktop{
+        position: relative;
+        transform: scale(0.5);
+        top: -197px;
+        left: -113px;
+    }
+
+    /* RIGHT PART OF CARD*/
+
+    .right__part--card {
+        position: relative;
+        width: 90%;
+    }
+    .principal-title{
+        text-align: center;
+    }
+    .arrow {
+        padding-left: 4px;
+    }
+    .arrow-3 {
+        padding-left: 67px;
+    }
+    .arrow-4 {
+        padding-left: 65px;
+    }
+    .arrow-5 {
+        padding-left: 27px;
+    }
+    .invert-arrow{
+        padding-right: 4px;
+    }
+    .title, .bold__text {
+        display: inline;
+        font-size: 14px;
+    }
+    .subtitle{
+        font-size: 13px;
+    }
+    .information{
+        padding: 15px;
+        border-bottom: 2px solid rgb(0 0 0 / .1);
+    }
+  }
